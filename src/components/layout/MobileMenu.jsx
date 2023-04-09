@@ -3,20 +3,20 @@ import { ReactComponent as IconMaquinaSvg } from '../../assets/icons/iconMaquina
 import { ReactComponent as IconSetaBaixoSvg } from '../../assets/icons/iconSetaB.svg';
 
 const imgemMenu = {
-  t1: { src: "/public/imgMenu/t1-1.png", alt: "" },
+  t1: { src: "/imgMenu/t1-1.png", alt: "" },
   t1chip: {
     src:
-      "/public/imgMenu/t1-chip-1.webp",
+      "/imgMenu/t1-chip-1.webp",
     alt: "",
   },
   t2: {
     src:
-      "/public/imgMenu/t2-1.webp",
+      "/imgMenu/t2-1.webp",
     alt: "",
   },
   t3: {
     src:
-      "/public/imgMenu/t3-1.webp",
+      "/imgMenu/t3-1.webp",
     alt: "",
   },
 };
