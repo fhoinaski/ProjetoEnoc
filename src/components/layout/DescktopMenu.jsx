@@ -6,20 +6,20 @@ import { SlArrowDown } from 'react-icons/sl';
 
 
 const imgemMenu = {
-    t1: { src: "/src/assets/images/imgMenu/t1-1.png", alt: "" },
+    t1: { src: "/public/imgMenu/t1-1.webp", alt: "" },
     t1chip: {
       src:
-        "/src/assets/images/imgMenu/t1-chip-1.webp",
+        "/public/imgMenu/t1-chip-1.webp",
       alt: "",
     },
     t2: {
       src:
-        "/src/assets/images/imgMenu/t2-1.webp",
+        "/public/imgMenu/t2-1.webp",
       alt: "",
     },
     t3: {
       src:
-        "/src/assets/images/imgMenu/t3-1.webp",
+        "/public/imgMenu/t3-1.webp",
       alt: "",
     },
   };
