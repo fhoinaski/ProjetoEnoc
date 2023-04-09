@@ -1,21 +1,22 @@
 import React, { useState } from 'react';
-import { ReactComponent as iconMaquininha } from '../../assets/icons/iconMaquina.svg';
+import { ReactComponent as IconMaquinaSvg } from '../../assets/icons/iconMaquina.svg';
+import { ReactComponent as IconSetaBaixoSvg } from '../../assets/icons/iconSetaB.svg';
 
 const imgemMenu = {
-  t1: { src: "https://res.cloudinary.com/dunz5zfpt/fl_progressive/f_auto,c_limit,w_48,q_auto/site-ton/t1-1", alt: "" },
+  t1: { src: "/src/assets/images/imgMenu/t1-1.webp", alt: "" },
   t1chip: {
     src:
-      "https://res.cloudinary.com/dunz5zfpt/fl_progressive/f_auto,c_limit,w_48,q_auto/site-ton/t1-chip-1",
+      "/src/assets/images/imgMenu/t1-chip-1.webp",
     alt: "",
   },
   t2: {
     src:
-      "https://res.cloudinary.com/dunz5zfpt/fl_progressive/f_auto,c_limit,w_48,q_auto/site-ton/t2-1",
+      "/src/assets/images/imgMenu/t2-1.webp",
     alt: "",
   },
   t3: {
     src:
-      "https://res.cloudinary.com/dunz5zfpt/fl_progressive/f_auto,c_limit,w_48,q_auto/site-ton/t3-1",
+      "/src/assets/images/imgMenu/t3-1.webp",
     alt: "",
   },
 };
@@ -66,9 +67,10 @@ const MobileMenu = () => {
       <a
         href="#"
         onClick={toggleMaquininhas}
-        className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-          <iconMaquininha className="h-5 w-5 mr-2" />
+        className="flex px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+          <IconMaquinaSvg className="h-5 w-5 mr-2" />
         Maquininhas
+        <IconSetaBaixoSvg className="h-5 w-5 mr-2" />
       </a>
       <div
         className={`${

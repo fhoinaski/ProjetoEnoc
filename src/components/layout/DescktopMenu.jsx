@@ -6,23 +6,23 @@ import { SlArrowDown } from 'react-icons/sl';
 
 
 const imgemMenu = {
-    t1: { src: "https://res.cloudinary.com/dunz5zfpt/fl_progressive/f_auto,c_limit,w_48,q_auto/site-ton/t1-1", alt: "" },
+    t1: { src: "/src/assets/images/imgMenu/t1-1.webp", alt: "" },
     t1chip: {
-        src:
-            "https://res.cloudinary.com/dunz5zfpt/fl_progressive/f_auto,c_limit,w_48,q_auto/site-ton/t1-chip-1",
-        alt: "",
+      src:
+        "/src/assets/images/imgMenu/t1-chip-1.webp",
+      alt: "",
     },
     t2: {
-        src:
-            "https://res.cloudinary.com/dunz5zfpt/fl_progressive/f_auto,c_limit,w_48,q_auto/site-ton/t2-1",
-        alt: "",
+      src:
+        "/src/assets/images/imgMenu/t2-1.webp",
+      alt: "",
     },
     t3: {
-        src:
-            "https://res.cloudinary.com/dunz5zfpt/fl_progressive/f_auto,c_limit,w_48,q_auto/site-ton/t3-1",
-        alt: "",
+      src:
+        "/src/assets/images/imgMenu/t3-1.webp",
+      alt: "",
     },
-};
+  };
 
 
 const products = [
