@@ -1,5 +1,6 @@
 import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import { ReactComponent as LogoTonSVG } from '../../assets/icons/logoTon.svg';
 
 const ResponsiveHeader = ({ mobileMenu, desktopMenu }) => {
   return (
@@ -10,7 +11,7 @@ const ResponsiveHeader = ({ mobileMenu, desktopMenu }) => {
             <div className="flex items-center justify-between h-[64px]"> {/* Altere a altura aqui */}
               <div className="flex items-center">
                 <div className="flex-shrink-0">
-                  <img className="h-[54px] w-[54px]" src="/src/assets/icons/logoTon.svg" alt="Logo" /> {/* Ajuste o tamanho do logotipo */}
+                  <LogoTonSVG className="h-[54px] w-[54px]" alt="Logo" /> {/* Ajuste o tamanho do logotipo */}
                 </div>
               </div>
               <div className="hidden md:block">{desktopMenu}</div>
