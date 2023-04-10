@@ -1,13 +1,11 @@
 import React from 'react';
-import ResponsiveNavbar from './navbar/ResponsiveHeader';
-import MobileMenu from './navbar/MobileMenu';
-import DesktopMenu from './navbar/DescktopMenu';
 
-const Layout = ({ children }) => {
+
+const Layout = ({ children}) => {
   return (
     <div className="flex flex-col min-h-screen">
       
-      <ResponsiveNavbar mobileMenu={<MobileMenu />} desktopMenu={<DesktopMenu />} />
+      
       <main className="flex-1">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">{children}</div>
       </main>

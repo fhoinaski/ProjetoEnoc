@@ -1,14 +1,19 @@
-import Layout from "../components/layout/Layout";
+
+
+import { Navbar } from "../components/layout/navbar/Navbar";
+
 
 
 
 
 const Home = () => {
-    return (
-        <Layout>
-
-        </Layout>
+    return (     
+        <Navbar/>
+                // <Layout>
+        //     <Section backgroundColor="bg-gray-200"></Section>
+            
+        // </Layout>
     );
-    };
+};
 
 export default Home;

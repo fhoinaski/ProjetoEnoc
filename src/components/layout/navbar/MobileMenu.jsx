@@ -59,16 +59,35 @@ const MobileMenu = () => {
     setIsMaquininhasOpen(!isMaquininhasOpen);
   };
 
+  // const toggleMaquininhas = () => {
+  //   setIsMaquininhasOpen(!isMaquininhasOpen);
+  //   const menu = document.querySelector('.maquininhas-menu');
+  //   const menuHeight = menu.scrollHeight;
+  //   if (isMaquininhasOpen) {
+  //     menu.style.height = `${menuHeight}px`;
+  //     setTimeout(() => {
+  //       menu.style.height = null;
+  //     }, 1000);
+  //   } else {
+  //     menu.style.height = `${menuHeight}px`;
+  //     setTimeout(() => {
+  //       menu.style.height = "0";
+  //     }, 10);
+  //   }
+  // };
+  
+
   const renderIcon = (item) => {
     return <img width={30} src={item.icon.src} alt={item.icon.alt} />;
   };
 
   return (
-<div className="px-2 pt-2 pb-3 space-y-1">
+ <div className="px-2 pt-2 pb-3 space-y-1 transition-all duration-500 ease-in-out mobile-menu">
 <a
   href="#"
   onClick={toggleMaquininhas}
-  className="flex px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+  className="flex px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 transition-all duration-1000"
+
 >
   <div className="flex items-center flex-1">
     <IconMaquinaSvg className="h-4 w-4 mr-3" />
