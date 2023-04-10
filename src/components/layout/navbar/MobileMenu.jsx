@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { ReactComponent as IconMaquinaSvg } from '../../assets/icons/iconMaquina.svg';
-import { ReactComponent as IconSetaBaixoSvg } from '../../assets/icons/iconSetaB.svg';
+import icons from '../../../assets/icons';
+
+const { IconMaquinaSvg, IconSetaBaixoSvg,IconMoneySvg,IconWhats,IconCarShop } = icons;
 
 const imgemMenu = {
   t1: { src: "/imgMenu/t1-1.png", alt: "" },
@@ -64,14 +65,22 @@ const MobileMenu = () => {
 
   return (
 <div className="px-2 pt-2 pb-3 space-y-1">
-      <a
-        href="#"
-        onClick={toggleMaquininhas}
-        className="flex px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
-          <IconMaquinaSvg className="h-5 w-5 mr-2" />
-        Maquininhas
-        <IconSetaBaixoSvg className="h-5 w-5 mr-2" />
-      </a>
+<a
+  href="#"
+  onClick={toggleMaquininhas}
+  className="flex px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+>
+  <div className="flex items-center flex-1">
+    <IconMaquinaSvg className="h-4 w-4 mr-3" />
+    <span>Maquininhas</span>
+  </div>
+  <div className={`flex items-end ml-2 duration-700 ${
+        isMaquininhasOpen ? '-rotate-180' : ''
+      }`}>
+    <IconSetaBaixoSvg className="h-4 w-4" />
+  </div>
+</a>
+
       <div
         className={`${
           isMaquininhasOpen ? 'max-h-screen' : 'max-h-0'
@@ -98,13 +107,16 @@ const MobileMenu = () => {
           </div>
         ))}
       </div>
-      <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+      <a href="#" className="flex items-center px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+        <IconMoneySvg className="h-4 w-4 mr-3" />
         Planos e taxas
       </a>
-      <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+      <a href="#" className="flex items-center px-3 py-2 rounded-md text-base font-medium  hover:bg-gray-50 text-green-600 hover:text-green-700">
+        <IconWhats className="h-4 w-4 mr-3" />
         Falar com consultor
       </a>
-      <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-green-500 hover:text-green-700 hover:bg-gray-50">
+      <a href="#" className="flex items-center px-3 py-2 rounded-md text-base font-medium text-green-500 hover:text-green-700 hover:bg-gray-50">
+        <IconCarShop className="h-4 w-4 mr-3" />
         Pedir agora
       </a>
     </div>

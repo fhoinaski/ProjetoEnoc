@@ -1,10 +1,10 @@
 import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
-import { ReactComponent as LogoTonSVG } from '../../assets/icons/logoTon.svg';
+import { ReactComponent as LogoTonSVG } from '../../../assets/icons/logoTon.svg';
 
 const ResponsiveHeader = ({ mobileMenu, desktopMenu }) => {
   return (
-    <Disclosure as="nav" className="bg-white shadow ">
+    <Disclosure as="nav" className="bg-white shadow  ">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

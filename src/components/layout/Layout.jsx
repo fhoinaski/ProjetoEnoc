@@ -1,8 +1,7 @@
 import React from 'react';
-import {Header} from './Header';
-import ResponsiveNavbar from './ResponsiveHeader';
-import MobileMenu from './MobileMenu';
-import DesktopMenu from './DescktopMenu';
+import ResponsiveNavbar from './navbar/ResponsiveHeader';
+import MobileMenu from './navbar/MobileMenu';
+import DesktopMenu from './navbar/DescktopMenu';
 
 const Layout = ({ children }) => {
   return (

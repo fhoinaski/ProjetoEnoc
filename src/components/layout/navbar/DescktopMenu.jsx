@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
-import { SlArrowDown } from 'react-icons/sl';
+import icons from '../../../assets/icons';
+
+const { IconMaquinaSvg, IconSetaBaixoSvg,IconMoneySvg,IconWhats,IconCarShop } = icons;
 
 
 
 const imgemMenu = {
-    t1: { src: "/imgMenu/t1-1.png", alt: "" },
+    t1: { src: "/imgMenu/t1-1.webp", alt: "" },
     t1chip: {
       src:
         "/imgMenu/t1-chip-1.webp",
@@ -61,20 +63,21 @@ const DesktopMenu = () => {
     };
 
     return (
-        <div className="ml-10  flex items-baseline space-x-8">
-            <Popover.Group className="hidden md:flex lg:gap-x-12 ">
-                <div className="group relative">
+        <div className="ml-10  flex items-baseline lg:space-x-10 md:space-x-4 ">
+            <Popover.Group className="hidden md:flex lg:gap-x-12  ">
+                <div className="group relative  ">
                     <div
                         onMouseEnter={() => setIsPopoverOpen(true)}
                         onMouseLeave={() => setIsPopoverOpen(false)}
-                        className="group"
+                        className="group "
                     >
-                        <Popover className="relative group ">
+                        <Popover className="relative group hover:stroke-green-300 hover:text-green-500  ">
                             <Popover.Button
-                                className="ml-2 mr-5 focus:outline-none flex items-center gap-x-1 text-sm lg:text-lg font-semibold leading-6 text-gray-900 p-2 rou hover:bg-gray-50 border-b-2 border-transparent hover:border-green-600 "
+                                className="ml-2 mr-5 focus:outline-none flex items-center gap-x-1 text-sm lg:text-lg font-medium leading-6 text-gray-900 p-2 rou hover:bg-gray-50 border-b-2 border-transparent  hover:border-green-600 hover:stroke-green-300 hover:text-green-500"
                             >
+                                <IconMaquinaSvg className="md:h-4 md:w-4 lg:h-4 lg:w-4"/>
                                 Maquininhas
-                                <SlArrowDown className="h-3 w-3 flex-none text-gray-400" aria-hidden="true" />
+                                <IconSetaBaixoSvg className="h-3 w-3 ml- items-end text-gray-400" aria-hidden="true" />
                             </Popover.Button>
 
                             <Transition
@@ -121,20 +124,22 @@ const DesktopMenu = () => {
             </Popover.Group>
 
             {/* Adicione o link "Planos e taxas" */}
-            <a href="#" className="text-sm lg:text-lg font-semibold leading-6 text-gray-900">
+            <a href="#" className=" flex items-center text-sm lg:text-lg font-medium leading-3 text-gray-900 hover:stroke-green-300 hover:text-green-500 ">
+                <IconMoneySvg className="h-4 w-4 md:mr-1 lg:mr-2 " />
                 Planos e taxas
             </a>
 
 
             {/* Adicione o link "Falar com consultor" */}
-            <a href="#" className="text-sm lg:text-lg font-semibold leading-6 text-gray-900">
+            <a href="#" className="flex items-center text-sm lg:text-lg font-medium leading-3 text-gray-900 hover:text-green-500"  >
+                <IconWhats className="h-4 w-4 md:mr-1 lg:mr-2 " />
                 Falar com consultor
             </a>
 
             {/* Adicione o botão "Comprar agora" */}
-            <button className="bg-blue-600 text-white text-sm font-semibold leading-6 px-4 py-2 rounded">
-                Comprar agora
-            </button>
+            <button className="rounded-full bg-green-600 shadow-md text-white px-4 py-2 Fshadow-lg hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400">
+      Comprar
+    </button>
         </div>
     );
 };
