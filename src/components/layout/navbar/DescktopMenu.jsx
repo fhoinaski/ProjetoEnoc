@@ -91,7 +91,7 @@ const DesktopMenu = () => {
                                 leaveTo="opacity-0 translate-y-1"
                             >
                                 <Popover.Panel
-                                    className="absolute left-0 top-full z-10 mt-[0.7rem] w-screen max-w-md overflow-hidden rounded-t-none rounded-b-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
+                                    className="absolute left-0 top-full z-20 mt-[0.7rem] w-screen max-w-md overflow-hidden rounded-t-none rounded-b-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
                                     onBlur={() => setIsPopoverOpen(false)}
                                 >
                                     <div className="p-4">
