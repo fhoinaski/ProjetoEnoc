@@ -7,7 +7,7 @@ const Section = () => {
       <div className="rounded-xl relative bg-green-700 py-8">
         <div className="absolute inset-0 overflow-hidden">
           <div class="rounded-e-xl absolute inset-y-0 right-0 w-1/2 bg-green-500">
-          <img className='md:w-32 md:ml-80' src="/public/maquininhasTonCard1.webp" alt="máquinas ton" />
+          <img className='md:w-32 w-36 md:ml-80' src="/public/maquininhasTonCard1.webp" alt="máquinas ton" />
             </div>
         </div>
         <div class=" flex-col justify-start max-w-6xl mx-auto  w-1/2 md:px-8  sm:mx-10 ml-3 lg:-px-8">

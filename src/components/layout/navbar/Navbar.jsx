@@ -1,10 +1,11 @@
 import DesktopMenu from "./DescktopMenu";
-// import MobileMenu from "./MobileMenu";
+import MobileMenu from "./MobileMenu";
 import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import { ReactComponent as LogoTonSVG } from '../../../assets/icons/logoTon.svg';
 import { useState } from "react";
-import MobileMenuModal from "./MobileMenuMOdal";
+// import MobileMenuModal from "./MobileMenuModal";
+
 
 
 export const Navbar = () => {
@@ -44,7 +45,7 @@ export const Navbar = () => {
                                 </div>
                             </div>
                         </div>
-                        <MobileMenuModal isOpen={isMobileMenuOpen} onClose={toggleMobileMenu} />
+                        <MobileMenu isOpen={isMobileMenuOpen} onClose={toggleMobileMenu} />
                     </>
                 )}
             </Disclosure>
