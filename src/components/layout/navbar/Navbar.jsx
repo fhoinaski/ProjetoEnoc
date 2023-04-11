@@ -4,7 +4,7 @@ import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import { ReactComponent as LogoTonSVG } from '../../../assets/icons/logoTon.svg';
 import { useState } from "react";
-import MobileMenuModal from "./MobileMenuModal";
+import MobileMenuModal from "./MobileMenuMOdal";
 
 
 export const Navbar = () => {

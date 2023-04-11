@@ -4,8 +4,6 @@ import React from 'react';
 const Layout = ({ children}) => {
   return (
     <div className="flex flex-col min-h-screen">
-      
-      
       <main className="flex-1">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">{children}</div>
       </main>
