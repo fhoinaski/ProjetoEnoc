@@ -137,7 +137,7 @@ const DesktopMenu = () => {
             </a>
 
             {/* Adicione o botão "Comprar agora" */}
-            <button className="rounded-full bg-green-600 shadow-md text-white px-4 py-2 Fshadow-lg hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400">
+            <button className="rounded-full bg-secondary shadow-md text-gray-900 px-4 py-1 hover:bg-btn_primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400">
       Comprar
     </button>
         </div>
